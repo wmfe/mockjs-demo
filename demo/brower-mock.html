@@ -1,0 +1,13 @@
+<pre></pre>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://mockjs.com/dist/mock.js"></script>
+<script>
+// 使用 Mock g]根据数据模板模拟数据
+var data = Mock.mock({
+    'list|1-10': [{
+        'id|+1': 1
+    }]
+});
+$('<pre>').text(JSON.stringify(data, null, 4))
+.appendTo('body')
+</script>
